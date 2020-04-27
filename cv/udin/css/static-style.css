@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/nexa-webfont.woff2') format('woff2'),
+		 url('fonts/nexa-webfont.woff') format('woff'),
+		 url('fonts/nexa-webfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/nexa_bold-webfont.woff2') format('woff2'),
+		 url('fonts/nexa_bold-webfont.woff') format('woff'),
+		 url('fonts/nexa_bold-webfont.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titillium';
+    src: url('fonts/Titillium-Regular.woff2') format('woff2'),
+		url('fonts/Titillium-Regular.woff') format('woff'),
+		url('fonts/Titillium-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titillium';
+    src: url('fonts/Titillium-Bold.woff2') format('woff2'),
+		url('fonts/Titillium-Bold.woff') format('woff')
+		url('fonts/Titillium-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/Quicksand-Bold.woff2') format('woff2'),
+        url('fonts/Quicksand-Bold.woff') format('woff'),
+        url('fonts/Quicksand-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/Quicksand-Italic.woff2') format('woff2'),
+        url('fonts/Quicksand-Italic.woff') format('woff'),
+        url('fonts/Quicksand-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/Quicksand-Regular.woff2') format('woff2'),
+        url('fonts/Quicksand-Regular.woff') format('woff'),
+        url('fonts/Quicksand-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrap{
+	background: GREY;
+	width: 800px;
+	margin: 10px auto;
+	border: 1px lightslategray;
+	height: 2500px;
+}
+/*bagian header*/
+.wrap .header{
+    background: #5D4037;
+    padding: 2px 10px;
+    height: 210px;
+}
+.wrap .header .headimg {
+    float:left;
+    width: 150px;
+    height: 150px;
+	padding: 25px;}
+
+.wrap .header h1,h2{
+    color:white;
+    font-family: Titillium;
+    position: relative;
+    height: 20px;
+}
+.wrap .header p {
+    color:white;
+    font-family: Titillium;
+    position: relative;
+    height: 20px;
+}
+
+/* SIDEBAR KIRI */
+
+.leftbar {
+	display: inline-block;
+	height: 50px; /*sets height of element*/
+ /*sets the background of this element (here a solid colour)*/
+	transition: all 0.6s; /*sets a transition (for hover effect)*/
+	padding-left: 20px; /*sets 'padding'*/
+	padding-right: 20px; /*sets 'padding'*/
+	line-height: 50px; /*for this, it sets vertical alignment*/
+	width:100%;
+	padding: 2px;
+	color:white;
+}
+.bar1 {
+	background: #F57C00;
+	font-family: nexa;
+}
+
+.bar3 {
+	background: #039BE5;
+	font-family: nexa;
+}
+.bar4 {
+	background: #ff6b81;
+	font-family: nexa;
+}
+.bar5 {
+	background: #4527a0;
+	font-family: nexa;
+}
+
+
+.sidebar h4{
+	font-family: titillium;
+	font-size: 18px;
+}
+.sidebar p {
+	font-family: ubuntu titling;
+}
+
+
+/* ----------------------------------------- */
+
+
+
+/*akhir header*/
+
+
+.badan{
+	background: white
+	height: 2300px;
+}
+
+.rightbar {
+	display: inline-block;
+	height: 50px; /*sets height of element*/
+ /*sets the background of this element (here a solid colour)*/
+	transition: all 0.6s; /*sets a transition (for hover effect)*/
+	padding-left: 20px; /*sets 'padding'*/
+	padding-right: 20px; /*sets 'padding'*/
+	line-height: 50px; /*for this, it sets vertical alignment*/
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+	background: white;
+	float: left;
+	width:240px;
+	height: 2300px;
+	text-align: center;
+}
+.sidetxt{
+	text-align: center;
+	color: black;
+}
+
+/*akhir sidebar*/
+
+/* Bagian konten tubuh */
+.wrap .badan .content{
+	background: white;
+	float: left;
+	height: 2300px;	
+	width:560px;
+}
+
+.bodybutton{
+    background-color: #4CAF50; /* Green */
+	width:200px;
+	font-size: 20px;
+}
+.bodybutton:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.content h2 {
+	font-family: ubuntu titling;
+	Margin: 30px;
+	padding: 10px;
+	height: 5px;
+}
+.content h3 {
+	font-family: Tekton pro;
+}
+
+
+/* --------------------------------------- */
+.column1 {
+    float: left;
+    padding: 10px;
+	height: 180px;
+	font-size: 17px;
+}
+
+.left1 {
+	width: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+.middle1 {
+  width: 50%;
+}
+.row p {
+	font-family: titillium;
+	font-weight: bold;
+
+}
+
+
+/* --------------------------------------- */
+.column2 {
+    float: left;
+    padding: 20px;
+    height: 300px; 
+}
+
+.left2 {
+	width: 10%;
+	text-align: center;
+	font-weight: bold;
+}
+.right2 {
+	width: 10%;
+}
+
+.middle2 {
+  width: 50%;
+}
+/* --------------------------------------- */
+.column3 {
+    float: left;
+    padding: 20px;
+    height: 300px; 
+}
+
+.left3 {
+	width: 9%;
+	text-align: center;
+	font-weight: bold;
+}
+.right3 {
+	width: 22%;
+}
+
+.middle3 {
+  width: 45%
+}
+
+
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Akhir konten tubuh */
+.wrap .footer{
+	width: 100%;
+	padding: 10px;
+}

@@ -1,0 +1,653 @@
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/nexa-webfont.woff2') format('woff2'),
+		 url('fonts/nexa-webfont.woff') format('woff'),
+		 url('fonts/nexa-webfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/nexa_bold-webfont.woff2') format('woff2'),
+		 url('fonts/nexa_bold-webfont.woff') format('woff'),
+		 url('fonts/nexa_bold-webfont.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titillium';
+    src: url('fonts/Titillium-Regular.woff2') format('woff2'),
+		url('fonts/Titillium-Regular.woff') format('woff'),
+		url('fonts/Titillium-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titillium';
+    src: url('fonts/Titillium-Bold.woff2') format('woff2'),
+		url('fonts/Titillium-Bold.woff') format('woff')
+		url('fonts/Titillium-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/Quicksand-Bold.woff2') format('woff2'),
+        url('fonts/Quicksand-Bold.woff') format('woff'),
+        url('fonts/Quicksand-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/Quicksand-Italic.woff2') format('woff2'),
+        url('fonts/Quicksand-Italic.woff') format('woff'),
+        url('fonts/Quicksand-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/Quicksand-Regular.woff2') format('woff2'),
+        url('fonts/Quicksand-Regular.woff') format('woff'),
+        url('fonts/Quicksand-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body{
+	height: 100%;
+	/*display: flex;*/
+}
+
+.container {
+	width:70%;
+	margin:auto;
+}
+
+.clearfix:after {
+	content:"";
+	clear:both;
+	display: table;
+}
+
+h2 {
+	margin:0;
+	padding: 30px;
+}
+
+body, a {
+	font-family: "Raleway";
+}
+
+/* 			Hello 			*/
+
+/* 			Navbar 			*/
+nav {
+	width:100%;
+	position: absolute;
+	top:80px;
+	left:0;
+}
+
+nav div.container ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+nav div.container  ul li{
+	position:relative;
+	text-align:center;
+	padding:0;
+	margin:0;
+	display:inline-flex;
+}
+
+nav div.container  ul li a{
+	font-weight: bold;
+	text-decoration:underline dashed;
+	background-color: none;
+	color:white;
+	width:100%;
+	padding:10px 25px;
+	margin:0;
+	vertical-align: middle;
+	transition: all 1s ease;
+}
+
+nav div.container ul li a:hover{
+	color:black ;
+	text-decoration:none;
+	background-color: white;
+	border-radius: 5px;
+
+}
+
+/*			Hello[content] 			*/
+
+#hello {
+	background-image: linear-gradient(to right, #22313F 0%, #22313F 100%);
+	padding:150px 10px;
+	height: 55%;
+	position:relative;
+}
+
+#hello h1 {
+	text-align: center;
+	margin:50px auto;
+	padding:0;
+	font-size: 5em;
+	color: white;
+	border-right: 0.05em solid #22313F;
+	animation:blink 1.75s ease infinite, typing 2.5s steps(10, end);
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 50px;
+	font-family: nexa;
+	letter-spacing: 0.001em;
+}
+
+#hello p{
+	line-height: 25px;
+}
+
+@keyframes typing {
+	from {width:0;}
+	to {width:55%;}
+}
+
+
+@keyframes blink {
+	from, to{
+		border-color:transparent;
+	}
+
+	75% {
+		border-color:#22313F;
+	}
+}
+
+/* 			Hello[arrow] 			*/
+
+.arrow-line {
+	position:relative;
+	margin: 30px auto;
+	width: 0;
+	height:200px;
+	border-left: 6px dashed rgba(255,255,255,.15);
+}
+
+.arrow {
+	position: absolute;
+	top:0;
+	left: -6px;
+	height:50px;
+	width:6px;
+	background: #fff;
+	animation: animate 2.5s infinite;
+}
+
+.arrow:before {
+	content:"";
+	position: absolute;
+	bottom:0;
+	left:-10px;
+	width: 20px;
+	height: 20px;
+	border-bottom: 6px solid #fff;
+	border-right: 6px solid #fff;
+	transform: rotate(45deg);
+}
+
+.arrow-line:hover {
+	cursor: pointer;
+}
+
+
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(100px);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateY(200px);
+		opacity: 0.1;
+	}
+}
+
+/* 			Bio 			*/
+
+#bio {
+	height:100vh;
+	position: relative;
+	background-image: linear-gradient(120deg, #48c6ef 0%,#6f86d6 100%);
+}
+
+#bio h1 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: nexa;
+}
+
+
+/* 			Skill		*/
+
+#skill {
+	height:100vh;
+	position: relative;
+	background-image: linear-gradient(120deg, #09203f 0%,  #537895 100%);
+}
+
+#skill h1 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: nexa;
+}
+
+.html-css-content, .js-jquery-content, .java-content, .python-content, .accordion-button {
+	width:80%;
+	margin:0 auto;
+	color:white;
+	padding:10px;
+}
+.html-css-content, .js-jquery-content, .java-content, .python-content{
+	background: rgba(0,0,0,0.4);
+}
+
+.accordion-button {
+	cursor:pointer;
+	background: linear-gradient(to left, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all 2s ease;
+	height:8vh;
+	font-weight: bold;
+}
+
+.accordion-button:hover{
+	background-position: left bottom;
+	letter-spacing: 4px;
+}
+
+.accordion-active {
+	background-position: left bottom;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+/* 			Award		*/
+
+#award {
+	height:100vh;
+	position: relative;
+	background-image: linear-gradient(120deg, #f3904f 0%,#3b4371 100%);
+}
+
+#award h1 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: nexa;
+}
+/* 			Education		*/
+
+#education {
+	height:100vh;
+	position: relative;
+	background-image: linear-gradient(120deg, #000428 0%,#004e92 100%);
+}
+
+#education h1 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: nexa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 			BACKUP DULU			*/
+
+#skills {
+	height:100vh;
+	background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+#skills h2{
+	text-align: center;
+	padding:20px;
+}
+
+.html-css-content, .js-jquery-content, .java-content, .python-content, .accordion-button {
+	width:80%;
+	margin:0 auto;
+	color:white;
+	padding:10px;
+}
+.html-css-content, .js-jquery-content, .java-content, .python-content{
+	background: rgba(0,0,0,0.4);
+}
+
+
+.accordion-button {
+	cursor:pointer;
+	background: linear-gradient(to left, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all 1.5s ease;
+	height:8vh;
+	font-weight: bold;
+	width:600px;
+}
+
+.accordion-button:hover{
+	background-position: left bottom;
+	letter-spacing: 4px;
+}
+
+.accordion-active {
+	background-position: left bottom;
+	letter-spacing: 4px;
+	text-align: center;
+	background-color: #ff3d00;
+}
+/* 			Contact 		*/
+
+#contact {
+	height:100vh;
+	background-color: #9b59b6;
+}
+
+#contact h2 {
+	font-weight: 200;
+	font-size: 4em;
+	padding: 50px 15px;
+	padding-bottom: 8px;
+}
+
+input,textarea {
+	font-family: Raleway;
+	display:block;
+	width:60%;
+	margin:15px;
+	padding:10px;
+	border-radius: 5px;
+}
+
+.contact-form {
+	padding:15px;
+	margin-top: 0;
+}
+
+button{
+	margin:15px;
+	padding: 5px 25px;
+	background:none;
+	color:white;
+	border-radius:5px;
+}
+
+
+/* 			Footer 			*/
+
+footer {
+	background-color: #2c3e50;
+	height:6vh;
+	transition: all 1s ease;
+}
+
+.social-media {
+	margin:0 auto;
+	vertical-align: middle;
+}
+
+.social-media a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+footer img{
+	width:32px;
+	height:32px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: auto;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+/* ---------- Buttons ----------------- */
+
+.button {
+	background-color: #4CAF50; /* Green */
+	font-family:titillium;
+	font-weight:bold;
+    border: none;
+    color: white;
+    padding: 16px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button1:hover {
+    background-color: #555555;
+	color: white;
+	-webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+	
+}
+
+/* ----------- Arrow Universal -------------- */
+
+.arrowuniv-line {
+	position:relative;
+	margin: 30px auto;
+	width: 0;
+	height:40px;
+	border-left: 6px dashed rgba(255,255,255,.15);
+}
+
+.arrowuniv {
+	position: absolute;
+	top:0;
+	left: -6px;
+	height:30px;
+	width:6px;
+	background: #fff;
+}
+
+.arrowuniv:before {
+	content:"";
+	position: absolute;
+	bottom:0;
+	left:-10px;
+	width: 20px;
+	height: 20px;
+	border-bottom: 6px solid #fff;
+	border-right: 6px solid #fff;
+	transform: rotate(45deg);
+}
+
+.arrowuniv-line:hover {
+	cursor: pointer;
+}
+
+
+/* ----------------------------------------- */
+
+.viewbox-container {
+	padding: 100px 0;
+	margin: 0 auto;
+	width: 70%;
+
+}
+
+.viewbox-nav {
+	float:left;
+	display:block;
+	height: 80vh;
+	height:100%;
+}
+
+.viewbox-nav a{
+	background-color: #22313F;
+	display: block;
+	margin:0;
+	padding:25px;
+	color:white;
+	text-decoration: none;
+}
+
+a.viewbox-active {
+	background-color: #013243;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.5);	
+}
+
+.viewbox {
+	float:left;
+	width:60vw;
+	height:70vh;
+	background-color: #013243;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+
+#viewbox-content {
+	width:100%;
+	transition: all 0.5s ease;
+}
+
+.basic-info h3{
+	text-align: center;
+}
+
+.basic-info .info a, .basic-info .info a:visited{
+	text-decoration-style: dashed;
+	color: #1abc9c;
+}
+
+.organisasi p{
+	margin-bottom:20px;
+}
+
+.organisasi h3 {
+	text-align: center;
+}
+
+.organisasi b {
+	padding-right: 30px;
+}
+
+.pendidikan h3{
+	text-align: center;
+}
+
+.pendidikan img {
+	background-color: white;
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+	display: block;
+	margin: 10px auto;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+.to-basic-info{
+	transform: translateY();
+}
+
+.to-organisasi {
+	transform: translateY(-85vh);
+}
+
+.to-pendidikan{
+	transform: translateY(-170vh);
+}
+
+.basic-info, .organisasi, .pendidikan {
+	height:70vh;
+	color:white;
+	padding:50px;
+}
+
+.basic-info img{
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	display: block;
+	margin: 10px auto;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+.list-type4{
+width:410px;
+margin:0 auto;
+}
+
+.list-type4 ol{
+counter-reset: li;
+list-style: none;
+*list-style: decimal;
+font-size: 17.5px;
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin-bottom: 4em;
+}
+.list-type4 a{
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+*padding: .4em;
+margin: .5em 0;
+background: #5975D9;
+color: white;
+text-decoration: none;
+box-shadow:inset 0.5em 0 black;
+-webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+transition: box-shadow 1s;
+}
+
+.list-type4 a:hover{
+box-shadow:inset 2em 0 black;
+}
